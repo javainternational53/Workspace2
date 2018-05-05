@@ -1,0 +1,12 @@
+{
+    "users": [
+        {"username": "Guestt", "password":"835d6dc88b708bc646d6db82c853ef4182fabbd4a8de59c213f2b5ab3ae7d9be"},
+        {"username": "SavetheWorld", "password":"60e77101e76950a9b1830fa107fd2f8fc545255b3e0f14b6a7797cf9ee005f07"},
+        {"username": "GWorld", "password":"07d715edb696fb5f628f7298e5d7217ed4d2bdfc5347a1c55fee30832267f21d"},
+        {"username": "Megvédem", "password":"835d6dc88b708bc646d6db82c853ef4182fabbd4a8de59c213f2b5ab3ae7d9be"},
+        {"username": "Azertis", "password":"e5d5d973a4b0fb76d300d77682e1e4de4c5cd52af8368bc22008b93ba3319c0f"},
+        {"username": "Troll", "password":"8d0a4df9cb86762a9fe521a3492e72a46dadf1237d6c8440c40ced7766efdfad"},
+        {"username": "test", "password":"9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"}
+        
+    ]
+}
