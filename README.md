@@ -15,5 +15,5 @@ Telepítés:
 6.mvn site parancs kiadásával előáll a riportokat tartalmazó fájl.
 
 Rendszerkövetelmények:
-1.Java 8 JRE megléte szükséges
-2.Minél gyorsabb számítógép License
+1.Java 8 JRE megléte szükséges.
+2.Minél gyorsabb számítógép.
