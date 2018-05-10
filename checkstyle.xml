@@ -9,4 +9,7 @@
         <module name="JavadocVariable"/>
         <module name="JavadocStyle"/>
     </module>
+    <module name="SuppressionFilter">
+    <property name="file" value="suppressions.xml"/>
+    </module>
 </module>

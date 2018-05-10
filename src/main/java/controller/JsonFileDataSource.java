@@ -27,17 +27,27 @@ import java.util.ResourceBundle;
 */
 
 /**
- * Created by zsolt on 5/28/17.
+ * Created by zsolt.
  */
 public class JsonFileDataSource implements IJsonDataSource {
+
+/**
+ *  filename is a file.
+ */
     private final String filename;
 
+/**
+ * @param filename is a file.
+ */
     public JsonFileDataSource(String filename) {
         //file exist or not
         this.filename = filename;
     }
 
-
+ /**
+ * JSONObject.
+   @return with null.
+ */
     public JSONObject getJson() {
         //read in and give back a json object.
         return null;

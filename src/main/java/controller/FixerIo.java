@@ -35,14 +35,35 @@ import java.util.Scanner;
 
 import org.json.JSONObject;
 
+  
+     /**
+     * 
+     * FixerIo.
+     */
 
 public class FixerIo {
 
 
+     /**
+     * 
+     * DataSource.
+     */
+
     private JSONObject DataSource;
 
+     /**
+     * 
+     * JSON.
+     */
 
     private String JSON;
+
+     /**
+     * FixerIo.
+     * @param BaseCurrency is a samaple Currency.
+     * @throws IOException when is there any problem at the threads.
+     * Itt IoExceoptiont Dob
+     */
 
     public FixerIo(String BaseCurrency) throws IOException {
 
@@ -53,7 +74,11 @@ public class FixerIo {
         this.DataSource = new JSONObject(JSON);
         this.DataSource.getJSONObject("rates").put(BaseCurrency,1d);
     }
-
+     /**
+     * @param BaseCurrency is the main currency.
+     * @param Filename is a Name.
+     * @throws FileNotFoundException is an Exception for the Files.
+     */
     public FixerIo(String BaseCurrency, String Filename) throws FileNotFoundException {
         StringBuilder sb = new StringBuilder();
         InputStream file = getClass().getClassLoader().getResourceAsStream(Filename);
@@ -68,18 +93,30 @@ public class FixerIo {
 
         //System.out.println(this.DataSource.toString(4));
     }
-
-    public void Save(PrintStream p) {
+    
+     /**
+     * @param p is tag
+     */
+      public void Save(PrintStream p) {
         p.print(this.JSON);
         p.flush();
     }
-
-    public Collection<String> GetCurrencies() {
+     /**
+     * 
+     * @return rates.
+     */
+      public Collection<String> GetCurrencies() {
         //  System.out.println(this.DataSource.getJSONObject("rates").keySet());
         return this.DataSource.getJSONObject("rates").keySet();
 
     }
-
+     /**
+     * 
+     * @param ApiUrl is a String type parameter.
+     * @return Result.
+     * @throws IOException when is there any problem at the threads.
+     * @throws MalformedURLException when is there any problem at the threads.
+     */
     private String DownloadData(String ApiUrl) throws MalformedURLException, IOException {
 
 
@@ -94,6 +131,13 @@ public class FixerIo {
         return Result.toString();
     }
 
+     /**
+     * 
+     * @param Amount is a size of the Currency.
+     * @param FromCurrency is type of the Currency.
+     * @param ToCurrency is Type of the Currency .
+     * @return Amount / From * To.
+     */
 
     public double ConvertCurrency(double Amount, String FromCurrency, String ToCurrency) {
 
@@ -103,8 +147,12 @@ public class FixerIo {
 
         return Amount / From * To;
     }
-
-    public double GetCurrencyRate(String Currency) {
+     /**
+     * 
+     * @param Currency is a parameter.
+     * @return DataSource
+     */
+	 public double GetCurrencyRate(String Currency) {
 
 
         return this.DataSource.getJSONObject("rates").getDouble(Currency);

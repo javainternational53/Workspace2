@@ -1,7 +1,7 @@
 package model;
 
 /**
- * Created by zsolt on 5/8/17.
+ * Created by zsolt.
  */
 
 /*
@@ -39,8 +39,16 @@ public class Hacking {
 /**
 Műveletek adja meg.
  */
+ 
 public class Hacking {
 
+/**
+ * 
+ * @param first is the first element.
+ * @param last is the last element.
+ * @param magic is the factor.
+ * @return with first or last.
+ */
 
     public long calculatemainnumber(long first, long last, String magic) {
 
@@ -68,7 +76,6 @@ public class Hacking {
                 return first / last;
 
         }
-
 
 
 

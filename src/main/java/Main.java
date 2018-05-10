@@ -1,6 +1,6 @@
+
 //package main.java;
 /*
-
 import org.json.JSONException;
 import org.json.JSONObject;
 import java.io.*;
@@ -29,6 +29,12 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+/**
+ * This is the {@code Main} class which starts the application.
+ * @author Zsolt
+ *
+ */
+ 
 public class Main extends Application {
 
     @Override
@@ -38,13 +44,17 @@ public class Main extends Application {
         //loader.setLocation(MainApp.class.getResource("view/menu.fxml"));
 
 
-      //  primaryStage.setTitle("Hello Magic World");
+        //  primaryStage.setTitle("Hello Magic World");
 
         primaryStage.setScene(new Scene(root, 500, 775));
         primaryStage.show();
     }
 
-
+     /**
+     * Main method.
+     * @param args are arguments of main method.
+     */
+     
     public static void main(String[] args) {
         launch(args);
     }

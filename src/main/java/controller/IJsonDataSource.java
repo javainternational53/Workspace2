@@ -1,17 +1,21 @@
 package controller;
 
 
-
 import org.json.JSONObject;
 
 /**
- * Created by zsolt on 5/28/17.
+ * Created by zsolt.
  */
 
 // Data Source in
-    // Mocooo
+// Mocooo
+
 
 public interface IJsonDataSource {
 
+/**
+ * JSONObject.
+ * @return with Json
+ */
     public JSONObject getJson();
 }

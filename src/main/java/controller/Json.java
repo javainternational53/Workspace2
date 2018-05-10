@@ -35,10 +35,20 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Scanner;
 
-
+/**
+ * Json.
+ */
 public class Json {
 
+/**
+ * JSONObject JSON.
+ */
     private final JSONObject JSON;
+    
+ /**
+ * @param Filename is a file name.
+ * @throws IOException when is there any problem at the threads.
+ */
 
     public Json(String Filename) throws IOException {
 
@@ -57,6 +67,10 @@ public class Json {
 
         this.JSON = new JSONObject(sb.toString());
     }
+    
+ /**
+ * @param DataSource is a Data.
+ */
 
     public Json(IJsonDataSource DataSource) {
         if (DataSource == null)
@@ -64,6 +78,12 @@ public class Json {
 
         this.JSON = DataSource.getJson();
     }
+    
+  /**
+ * @param Username is a username.
+ * @param Password is a password.
+ * @return false , returns with false.
+ */
 
     public boolean authenticate(String Username, String Password) {
 
@@ -103,8 +123,16 @@ public class Json {
             return false;
         }
     }
+    
+    
     // Hey Man , Hashing
 
+
+/**
+ * @param Input is the input file.
+ * @throws NoSuchAlgorithmException when is there any problem at the threads.
+ * @return toString().
+ */
     private String hash(String Input) throws NoSuchAlgorithmException {
 
 
