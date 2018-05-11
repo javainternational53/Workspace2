@@ -44,6 +44,11 @@ Műveletek adja meg.
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * Hacking.
+ * mathematical operations
+ * @author Zsolt
+ */
 
 public class Hacking {
 

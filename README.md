@@ -17,5 +17,5 @@ Telepítés:
 
 Rendszerkövetelmények:
 1.Java 8 JRE megléte szükséges
-2.Maven
+2.Maven ( Maven verzió lekérése :mvn --version)
 3.Minél gyorsabb számítógép.
