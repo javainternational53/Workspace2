@@ -12,7 +12,8 @@ Telepítés:
 3.Miután lefutott a parancs, a\target\ mappában levő jar filet kell megnyitni:
   java -jar target/MyWorkspace-Zsolt-1.0-jar-with-dependencies.jar
 5.Az alkalmazás elindul.
-6.mvn site parancs kiadásával előáll a riportokat tartalmazó fájl.
+6.mvn site parancs kiadásával előáll a riportokat tartalmazó fájl,index.html.
+(7.Clover: mvn clover:instrumen)
 
 Rendszerkövetelmények:
 1.Java 8 JRE megléte szükséges.
