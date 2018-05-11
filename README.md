@@ -4,7 +4,7 @@
                                         
 2018 - v1.1:
 Valutaváltó alkalmazás Fixer.io-val és Számológép, JavaFx alkalmazás.
-Ez a Projekt egy Maven Projekt.
+Továbbá ez egy Maven Projekt.
 
 Telepítés:
 1.A tároló leklónozása.
@@ -19,3 +19,5 @@ Rendszerkövetelmények:
 1.Java 8 JRE megléte szükséges
 2.Maven ( Maven verzió lekérése :mvn --version)
 3.Minél gyorsabb számítógép.
+
+
