@@ -53,7 +53,7 @@ import org.slf4j.LoggerFactory;
 public class Hacking {
 
 /**
- * 
+ * Calculate the main number, this is the simple calculator.
  * @param first is the first element.
  * @param last is the last element.
  * @param magic is the factor.

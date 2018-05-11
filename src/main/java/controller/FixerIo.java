@@ -75,6 +75,7 @@ public class FixerIo {
         this.DataSource.getJSONObject("rates").put(BaseCurrency,1d);
     }
      /**
+     * Get rates from FixerIo.
      * @param BaseCurrency is the main currency.
      * @param Filename is a Name.
      * @throws FileNotFoundException is an Exception for the Files.
