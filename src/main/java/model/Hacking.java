@@ -6,6 +6,8 @@ package model;
 
 /*
 
+
+
 import org.json.JSONException;
 import org.json.JSONObject;
 import java.io.*;
@@ -39,7 +41,10 @@ public class Hacking {
 /**
 Műveletek adja meg.
  */
- 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+
 public class Hacking {
 
 /**
@@ -52,8 +57,11 @@ public class Hacking {
 
     public long calculatemainnumber(long first, long last, String magic) {
 
-
-        //final Logger slf4jLogger = LoggerFactory.getLogger(Hacking.class);
+        /**
+	 * Info Logger for this class.
+	 */
+        
+        final Logger slf4jLogger = LoggerFactory.getLogger(Hacking.class);
 
         switch (magic) {
 
