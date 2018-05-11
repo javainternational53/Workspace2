@@ -66,13 +66,21 @@ public class FixerIo {
      */
 
     public FixerIo(String BaseCurrency) throws IOException {
-
-
+    
+   
+   
+   	this(BaseCurrency,"currency.json");
+       
+    
         String ApiUrl = String.format("http://api.fixer.io/latest?base=%s", BaseCurrency);
-        this.JSON = this.DownloadData(ApiUrl);
-
+        
+         String tempJson=this.DownloadData(ApiUrl);
+         
+         System.out.println(tempJson);
+         if( tempJson.length()>10 ) {
+       this.JSON=tempJson;
         this.DataSource = new JSONObject(JSON);
-        this.DataSource.getJSONObject("rates").put(BaseCurrency,1d);
+        this.DataSource.getJSONObject("rates").put(BaseCurrency,1d);}
     }
      /**
      * Get rates from FixerIo.
@@ -129,6 +137,11 @@ public class FixerIo {
             while (sc.hasNextLine())
                 Result.append(sc.nextLine());
         }
+        
+        catch
+        (
+        Exception e
+        ){}
 
         return Result.toString();
     }

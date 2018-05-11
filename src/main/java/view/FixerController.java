@@ -74,9 +74,7 @@ public class FixerController implements Initializable {
 
         public FixerController() throws IOException {
 
-            //Hatsune Miku - Ten thousand stars
-            //https://www.youtube.com/watch?v=Gzve2hpLeqc
-            //Nao - Neonlight Overdrive Sparkling clarity
+           
         }
 
     @FXML
