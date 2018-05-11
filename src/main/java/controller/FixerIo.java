@@ -37,7 +37,7 @@ import org.json.JSONObject;
 
   
      /**
-     * 
+     * This is the FixerIo class.This is working with the rates and give us fresh currency Rates.
      * FixerIo.
      */
 
@@ -45,7 +45,7 @@ public class FixerIo {
 
 
      /**
-     * 
+     * This contains the actual rates.
      * DataSource.
      */
 
@@ -95,14 +95,14 @@ public class FixerIo {
     }
     
      /**
-     * @param p is tag
+     * @param p is a PrintStream object for writing out the state of the downloaded JSON data about the currencies.
      */
       public void Save(PrintStream p) {
         p.print(this.JSON);
         p.flush();
     }
      /**
-     * 
+     * We get the actual currencies.
      * @return rates.
      */
       public Collection<String> GetCurrencies() {
@@ -111,7 +111,8 @@ public class FixerIo {
 
     }
      /**
-     * 
+     *
+     * Downloading the corrrect Data with the ApiUrl.
      * @param ApiUrl is a String type parameter.
      * @return Result.
      * @throws IOException when is there any problem at the threads.
@@ -132,7 +133,7 @@ public class FixerIo {
     }
 
      /**
-     * 
+     * This is converting the currencies.
      * @param Amount is a size of the Currency.
      * @param FromCurrency is type of the Currency.
      * @param ToCurrency is Type of the Currency .

@@ -79,7 +79,8 @@ public class Json {
         this.JSON = DataSource.getJson();
     }
     
-  /**
+  /** 
+ * This is the authentication part of the Application.
  * @param Username is a username.
  * @param Password is a password.
  * @return false , returns with false.
@@ -129,6 +130,7 @@ public class Json {
 
 
 /**
+ * Hashing algorithm of the code.
  * @param Input is the input file.
  * @throws NoSuchAlgorithmException when is there any problem at the threads.
  * @return toString().

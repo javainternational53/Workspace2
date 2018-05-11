@@ -46,7 +46,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Hacking.
- * mathematical operations
+ * Here we can find the mathematical operations.
  * @author Zsolt
  */
 

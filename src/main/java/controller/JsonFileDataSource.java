@@ -37,6 +37,7 @@ public class JsonFileDataSource implements IJsonDataSource {
     private final String filename;
 
 /**
+ * JsonFileDataSource.
  * @param filename is a file.
  */
     public JsonFileDataSource(String filename) {
